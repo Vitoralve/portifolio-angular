@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+/* Estilos padrão */
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Exemplo de como alterar outros componentes */
+body.dark-mode .navbar {
+  background-color: #212529;
+}
