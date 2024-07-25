@@ -10,3 +10,42 @@
 
 }
 
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.nav-buttons {
+  padding: 10px 0;
+}
+
+.nav-btn {
+  background-color: #34495e; /* Cor de fundo dos botões */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background-color: #1abc9c; /* Cor ao passar o mouse */
+}
+
+.nav-btn p {
+  margin: 0;
+  color: inherit;
+}
