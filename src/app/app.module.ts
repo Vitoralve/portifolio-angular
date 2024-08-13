@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { ThemeToggleComponent } from './shared/components/theme-toggle/theme-toggle.component';
+import { HomeComponent } from './pages/home/home.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -18,6 +19,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     NavbarComponent,
+    HomeComponent,
     ThemeToggleComponent
   ],
   imports: [
