@@ -9,28 +9,35 @@
     <div class="row w-100 nav-buttons">
       <div class="col-lg-4 col-md-12 text-center">
         <button type="button" class="btn nav-btn">
-          <p>{{'Sobre' | translate}}</p>
+          <p>{{ "Sobre" | translate }}</p>
         </button>
       </div>
       <div class="col-lg-4 col-md-12 text-center">
         <button type="button" class="btn nav-btn">
-          <p>{{'Apresentação' | translate}}</p>
+          <p>{{ "Apresentação" | translate }}</p>
         </button>
       </div>
       <div class="col-lg-4 col-md-12 text-center">
         <button type="button" class="btn nav-btn">
-          <p>{{'Projetos' | translate}}</p>
+          <p>{{ "Projetos" | translate }}</p>
         </button>
-
       </div>
     </div>
   </div>
 
   <!-- Item no fim -->
   <div class="col d-flex justify-content-end btn-flags">
-    <img src="assets/brasil.png" class="flag-icon" alt="Brazil Flag" (click)="switchLanguege('pt')">
-    <img src="assets/usa.png" class="flag-icon" alt="USA Flag" (click)="switchLanguege('en')">
+    <img
+      src="assets/brasil.png"
+      class="flag-icon"
+      alt="Brazil Flag"
+      (click)="switchLanguege('pt')"
+    />
+    <img
+      src="assets/usa.png"
+      class="flag-icon"
+      alt="USA Flag"
+      (click)="switchLanguege('en')"
+    />
   </div>
-
-
 </div>

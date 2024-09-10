@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { ThemeToggleComponent } from './shared/components/theme-toggle/theme-toggle.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FaceFollowerComponent } from './shared/components/face-follower/face-follower.component';
+import { FaceFollowerThreeComponent } from './shared/components/face-follower-three/face-follower-three.component';
+import { MorphAnimationComponent } from './shared/components/morb-animation/morb-animation.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -20,7 +23,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ThemeToggleComponent
+    FaceFollowerComponent,
+    FaceFollowerThreeComponent,
+    ThemeToggleComponent,
+    MorphAnimationComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,11 +36,11 @@ export function HttpLoaderFactory(http: HttpClient) {
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

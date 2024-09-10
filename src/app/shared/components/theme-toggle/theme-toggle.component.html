@@ -1,5 +1,8 @@
-<button class="btn btn-primary" (click)="toggleTheme()">
+<button
+  class="btn btn-primary"
+  (click)="toggleTheme()"
+  aria-label="Toggle theme"
+>
   <i *ngIf="!isDarkMode()" class="bi bi-sun"></i>
   <i *ngIf="isDarkMode()" class="bi bi-moon"></i>
 </button>
-

@@ -6,12 +6,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { ThemeToggleComponent } from './shared/components/theme-toggle/theme-toggle.component';
 
-const routes: Routes = [
-  { path: '', component: HomeComponent }
-];
+const routes: Routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
