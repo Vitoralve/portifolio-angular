@@ -1,0 +1,19 @@
+/* Estilo inicial do container */
+.tela {
+  position: absolute; /* Necessário para a movimentação */
+  top: 50%;
+  left: 35%;
+  transition: left 2s ease-in-out, height 1s ease-in-out; /* Suavizar a transição de left e height */
+  overflow: hidden; /* Garante que não haverá rolagem interna no container */
+}
+
+/* Estilo para mover o canvas para a direita */
+.tela.move-right {
+  left: 70%; /* Move o container para a direita da tela, sem ultrapassar os limites */
+}
+
+canvas {
+  display: block;
+  width: 100%; /* O canvas ocupa 100% da largura do container */
+  height: 100%; /* O canvas ocupa 100% da altura do container */
+}

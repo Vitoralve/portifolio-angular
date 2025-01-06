@@ -11,7 +11,12 @@ import { ThemeToggleComponent } from './shared/components/theme-toggle/theme-tog
 import { HomeComponent } from './pages/home/home.component';
 import { FaceFollowerComponent } from './shared/components/face-follower/face-follower.component';
 import { FaceFollowerThreeComponent } from './shared/components/face-follower-three/face-follower-three.component';
-import { MorphAnimationComponent } from './shared/components/morb-animation/morb-animation.component';
+import { MorphAnimationComponent } from './shared/components/morph-animation/morph-animation.component';
+import { MorphButtonsComponent } from './pages/morph-botoes/morph-botoes.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -27,11 +32,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     FaceFollowerThreeComponent,
     ThemeToggleComponent,
     MorphAnimationComponent,
+    MorphButtonsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -40,7 +49,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
     }),
   ],
-  providers: [],
+  providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="form-grid row">
+    <!-- Lista para Andar sobre a tela -->
+    <div class="col-4">
+      <h3>Movimentos - Andar sobre a tela</h3>
+      <mat-selection-list #listaAndar>
+        <mat-list-option *ngFor="let item of listaAndarItens" [value]="item">
+          {{ item }}
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+
+    <!-- Lista para Mudanças Facial -->
+    <div class="col-4">
+      <h3>Movimentos - Mudanças Facial</h3>
+      <mat-selection-list #listaFacial>
+        <mat-list-option *ngFor="let item of listaFacialItens" [value]="item">
+          {{ item }}
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+
+    <!-- Lista para Emoções corpo -->
+    <div class="col-4">
+      <h3>Movimentos - Emoções corpo</h3>
+      <mat-selection-list #listaCorpo>
+        <mat-list-option *ngFor="let item of listaCorpoItens" [value]="item">
+          {{ item }}
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+  </div>
+
+  <!-- Botão de Ação -->
+  <button
+    class="btn btn-primary mt-3"
+    (click)="acaoFinal(listaAndar, listaFacial, listaCorpo)"
+  >
+    Ação
+  </button>
+</div>
+
+<app-morph-animation></app-morph-animation>
