@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  selector: 'app-page-projects',
+  templateUrl: './page-projects.component.html',
+  styleUrls: ['./page-projects.component.scss'],
 })
-export class NavbarComponent {
-  constructor(private translate:TranslateService, private router: Router) {
+export class ProjectsComponent {
+  constructor(private translate: TranslateService) {
     translate.addLangs(['en', 'es']);
     translate.setDefaultLang('pt');
 
@@ -18,9 +17,5 @@ export class NavbarComponent {
 
   switchLanguege(language: string) {
     this.translate.use(language);
-  }
-
-  routeProjects(){
-    this.router.navigate(['/projects']);
   }
 }

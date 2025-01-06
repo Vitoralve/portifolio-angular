@@ -17,6 +17,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ProjectsComponent } from './pages/page-projects/page-project.scomponent';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -33,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ThemeToggleComponent,
     MorphAnimationComponent,
     MorphButtonsComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
