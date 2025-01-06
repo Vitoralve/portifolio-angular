@@ -6,7 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { ThemeToggleComponent } from './shared/components/theme-toggle/theme-toggle.component';
 import { MorphButtonsComponent } from './pages/morph-botoes/morph-botoes.component';
-import { ProjectsComponent } from './pages/page-projects/page-project.scomponent';
+import { ProjectsComponent } from './pages/page-projects/page-projects.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },

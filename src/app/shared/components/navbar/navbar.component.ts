@@ -23,4 +23,8 @@ export class NavbarComponent {
   routeProjects(){
     this.router.navigate(['/projects']);
   }
+
+  routeApresentation(){
+    this.router.navigate(['/']);
+  }
 }
