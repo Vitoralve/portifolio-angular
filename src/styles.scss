@@ -1,14 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 /* Estilos padrão */
 body {
-  background-color: #e7e6e6;
-  color: #000;
+  background-color: var(--background-color);
+  --background-color: #f1debd;
+  --text-color-titulos: #333e50;
+  --text-color-subtitulos: #6e6e6e;
+
+  --color-theme-1: #c4b59b;
+  --color-theme-2: #9a8e7a;
 }
 
 /* Estilos para o modo escuro */
 body.dark-mode {
-  background-color: #343a40;
-  color: #fff;
+  --background-color: #343a40;
+  --text-color-titulos: #f1debd;
+  --text-color-subtitulos: #d4d4dc;
+
+
+  --color-theme-1: #2c3443;
+  --color-theme-2: #364154;
 }
 
 /* Exemplo de como alterar outros componentes */
