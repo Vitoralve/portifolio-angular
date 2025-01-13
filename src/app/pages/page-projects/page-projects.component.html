@@ -24,15 +24,17 @@
           <div class="card">
             <div class="row">
               <div class="col-12">
-                <p class="card-title">{{ item.title }}</p>
+                <p class="card-title">{{ item.name }}</p>
               </div>
               <div class="col-12">
                 <p class="card-description">
-                  {{ item.description }}
+                  {{ item.resumeDescription }}
                 </p>
               </div>
               <div class="col-12 text-end">
-                <button class="card-button secondary">Ver Mais</button>
+                <button class="card-button secondary"
+                (click)="openDialog(item)"
+                >Ver Mais</button>
               </div>
             </div>
           </div>
@@ -42,19 +44,21 @@
     <div class="col-4 text-center">
       <p class="topic-title">Back-End </p>
       <div class="scrollable-container">
-        <div class="card-container" *ngFor="let item of listCardsFront">
+        <div class="card-container" *ngFor="let item of listCardsBack">
           <div class="card">
             <div class="row">
               <div class="col-12">
-                <p class="card-title">{{ item.title }}</p>
+                <p class="card-title">{{ item.name }}</p>
               </div>
               <div class="col-12">
                 <p class="card-description">
-                  {{ item.description }}
+                  {{ item.resumeDescription }}
                 </p>
               </div>
               <div class="col-12 text-end">
-                <button class="card-button secondary">Ver Mais</button>
+                <button class="card-button secondary"
+                (click)="openDialog(item)"
+                >Ver Mais</button>
               </div>
             </div>
           </div>
@@ -65,19 +69,21 @@
     <div class="col-4 text-center">
       <p class="topic-title">Banco de Dados</p>
       <div class="scrollable-container">
-        <div class="card-container" *ngFor="let item of listCardsFront">
+        <div class="card-container" *ngFor="let item of listCardsBancoDados">
           <div class="card">
             <div class="row">
               <div class="col-12">
-                <p class="card-title">{{ item.title }}</p>
+                <p class="card-title">{{ item.name }}</p>
               </div>
               <div class="col-12">
                 <p class="card-description">
-                  {{ item.description }}
+                  {{ item.resumeDescription }}
                 </p>
               </div>
               <div class="col-12 text-end">
-                <button class="card-button secondary">Ver Mais</button>
+                <button class="card-button secondary"
+                (click)="openDialog(item)"
+                >Ver Mais</button>
               </div>
             </div>
           </div>
@@ -85,4 +91,10 @@
       </div>
     </div>
   </div>
+</div>
+
+
+<!-- Toast Container -->
+<div class="custom-toast" *ngIf="toastVisible">
+  <p>Toaste</p>
 </div>

@@ -88,17 +88,23 @@ export class MorphAnimationComponent implements OnInit, AfterViewInit {
   private setupModel(
     model: THREE.Object3D,
     animations: THREE.AnimationClip[],
-    animationIndex: number = 2
+    animationIndex: number = this.getAnimationAleatory()
   ): void {
     model.scale.set(0.5, 0.5, 0.5);
     this.mixer = new THREE.AnimationMixer(model);
     const action = this.mixer.clipAction(animations[animationIndex]);
     action.timeScale = this.getRandomTimeScale();
     action.play();
+
   }
 
   private getRandomTimeScale(): number {
-    return 0.5 + Math.random() * 0.5;
+    return 0.5 + Math.random() * 0.001;
+  }
+
+  private getAnimationAleatory(): number {
+    const animations = [2, 6, 9, 10, 12, 13];
+    return animations[Math.floor(Math.random() * animations.length)];
   }
 
   private animate(): void {
