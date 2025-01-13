@@ -13,13 +13,14 @@
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra mais intensa para destacar o texto */
   text-align: center;
   padding: 10px;
+  color: var(--text-color-titulos);
 }
 
 .job {
   font-family: "Arial", sans-serif;
   font-size: 24px; /* Tamanho menor que o nome */
   font-weight: normal;
-  color: #6e6e6e; /* Cor cinza clara para contraste */
+  color: var(--text-color-subtitulos); /* Cor cinza clara para contraste */
   text-align: center;
   margin-top: -10px; /* Ajuste de margem para aproximar do nome */
 }

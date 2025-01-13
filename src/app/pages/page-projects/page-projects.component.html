@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 tela">
+      <app-morph-animation></app-morph-animation>
+    </div>
+    <div class="col-6">
+    </div>
+    <div class="col-6 text-center">
+      <h1 class="title">Bem-vindo aos meus projetos</h1>
+      <h3 class="subTitle">
+        Neste espaço, apresento um resumo dos meus projetos, com foco no desenvolvimento full stack, para destacar no meu portfólio.
+      </h3>
+      <h5 class="footerDescription">
+        Se curtir os projetos ou tiver uma dica, ou até mesmo quiser trocar uma prosa, mande um email para <a href="mailto:vitoralve81&#64;gmail.com">vitoralve81&#64;gmail.com</a>.
+      </h5>
+    </div>
+  </div>
+
+  <div class="row topic-section" style="margin-top: 10%;">
+    <div class="col-4 text-center">
+      <p class="topic-title">Front-End /Aplicativos</p>
+      <div class="scrollable-container">
+        <div class="card-container" *ngFor="let item of listCardsFront">
+          <div class="card">
+            <div class="row">
+              <div class="col-12">
+                <p class="card-title">{{ item.name }}</p>
+              </div>
+              <div class="col-12">
+                <p class="card-description">
+                  {{ item.resumeDescription }}
+                </p>
+              </div>
+              <div class="col-12 text-end">
+                <button class="card-button secondary"
+                (click)="openDialog(item)"
+                >Ver Mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 text-center">
+      <p class="topic-title">Back-End </p>
+      <div class="scrollable-container">
+        <div class="card-container" *ngFor="let item of listCardsBack">
+          <div class="card">
+            <div class="row">
+              <div class="col-12">
+                <p class="card-title">{{ item.name }}</p>
+              </div>
+              <div class="col-12">
+                <p class="card-description">
+                  {{ item.resumeDescription }}
+                </p>
+              </div>
+              <div class="col-12 text-end">
+                <button class="card-button secondary"
+                (click)="openDialog(item)"
+                >Ver Mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-4 text-center">
+      <p class="topic-title">Banco de Dados</p>
+      <div class="scrollable-container">
+        <div class="card-container" *ngFor="let item of listCardsBancoDados">
+          <div class="card">
+            <div class="row">
+              <div class="col-12">
+                <p class="card-title">{{ item.name }}</p>
+              </div>
+              <div class="col-12">
+                <p class="card-description">
+                  {{ item.resumeDescription }}
+                </p>
+              </div>
+              <div class="col-12 text-end">
+                <button class="card-button secondary"
+                (click)="openDialog(item)"
+                >Ver Mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Toast Container -->
+<div class="custom-toast" *ngIf="toastVisible">
+  <p>Toaste</p>
+</div>

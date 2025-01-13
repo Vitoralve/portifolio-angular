@@ -1,0 +1,82 @@
+{
+  "projects": {
+    "backend": [
+      {
+        "name": "Visual Solution",
+        "resumeDescription": "Desenvolvimento de APIs para otimização de processos empresariais.",
+        "description": "Desenvolvi APIs RESTful em Node.js para gerenciar dados e integrações com o banco de dados. As APIs permitiram CRUDs eficientes e suporte à integração com serviços externos.",
+        "image": "visual_solution.jpg"
+      },
+      {
+        "name": "CETEST Minas",
+        "resumeDescription": "APIs para gerenciamento de equipamentos e contratos.",
+        "description": "Implementei a lógica de negócios e APIs RESTful para gerenciamento de equipamentos e controle de usuários. O backend foi projetado para ser modular e escalável.",
+        "image": "cetest_minas.jpg"
+      },
+      {
+        "name": "Potenza Soluções",
+        "resumeDescription": "APIs para integração de dados e serviços personalizados.",
+        "description": "Implementei APIs para integração com serviços de terceiros e gerenciamento de dados de clientes, criando soluções personalizadas.",
+        "image": "potenza_solucoes.jpg"
+      }
+    ],
+    "frontend": [
+      {
+        "name": "Visual Solution",
+        "resumeDescription": "Interface intuitiva para otimização de processos.",
+        "description": "Implementei uma interface responsiva e intuitiva utilizando Angular, garantindo usabilidade e acessibilidade para os colaboradores.",
+        "image": "visual_solution.jpg"
+      },
+      {
+        "name": "CETEST Minas",
+        "resumeDescription": "Gráficos dinâmicos e interface moderna.",
+        "description": "Implementei gráficos dinâmicos e uma interface moderna utilizando Angular para visualização de dados em tempo real.",
+        "image": "cetest_minas.jpg"
+      },
+      {
+        "name": "Bate Volta Aplicativo",
+        "resumeDescription": "Interface amigável para aplicativo de viagens.",
+        "description": "Implementei uma interface amigável utilizando Java no Android Studio, oferecendo uma experiência fluida para os usuários.",
+        "image": "bate_volta.jpg"
+      },
+      {
+        "name": "Cidadão MG",
+        "resumeDescription": "Interface responsiva para serviços públicos.",
+        "description": "Implementei uma interface responsiva e acessível utilizando Angular, focando na experiência do usuário e acessibilidade.",
+        "image": "cidadao_mg.jpg"
+      },
+      {
+        "name": "Potenza Soluções",
+        "resumeDescription": "Site institucional moderno e responsivo.",
+        "description": "Desenvolvi um site institucional moderno e responsivo utilizando Angular para apresentar os serviços da empresa.",
+        "image": "potenza_solucoes.jpg"
+      },
+      {
+        "name": "FAPEMIG",
+        "resumeDescription": "Interfaces dinâmicas para soluções acadêmicas.",
+        "description": "Criei interfaces dinâmicas e responsivas para visualização de dados e funcionalidades acadêmicas.",
+        "image": "fapemig.jpg"
+      }
+    ],
+    "bancoDeDados": [
+      {
+        "name": "Visual Solution",
+        "resumeDescription": "Modelagem e integração de banco de dados para processos empresariais.",
+        "description": "Modelei e gerenciei o banco de dados em PostgreSQL, incluindo consultas complexas e integração com o Google BigQuery.",
+        "image": "visual_solution.jpg"
+      },
+      {
+        "name": "CETEST Minas",
+        "resumeDescription": "Banco de dados para gerenciamento de equipamentos.",
+        "description": "Modelei o banco de dados em PostgreSQL para armazenar informações sobre equipamentos e contratos, otimizando consultas para relatórios em tempo real.",
+        "image": "cetest_minas.jpg"
+      },
+      {
+        "name": "Bate Volta Aplicativo",
+        "resumeDescription": "Estrutura de banco de dados para sincronização de viagens.",
+        "description": "Configurei o banco de dados no Firebase, otimizando a estrutura para sincronização e armazenamento eficiente.",
+        "image": "bate_volta.jpg"
+      }
+    ]
+  }
+}

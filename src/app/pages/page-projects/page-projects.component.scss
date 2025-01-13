@@ -1,0 +1,167 @@
+.tela {
+  position: absolute;
+  top: 5;
+  left: 5;
+  width: auto;
+  height: auto;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos Gerais */
+body {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  background-color: #1e1e2f;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Estilo para o Título Principal */
+.title {
+  padding-top: 10%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-color-titulos);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+/* Estilo para o Subtítulo */
+.subTitle {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color:var(--text-color-subtitulos);
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo para o Texto de Descrição do Rodapé */
+.footerDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color-subtitulos);
+  margin-top: 2rem;
+}
+
+/* Estilo para o Link do E-mail */
+.footerDescription a {
+  color: var(--text-color-titulos);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerDescription a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos da seção de tópicos */
+.topic-section {
+  font-family: 'Comic Sans MS', cursive;
+}
+
+/* Estilo para o título dos tópicos */
+.topic-title {
+  color: var(--text-color-titulos);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Estilo da linha decorativa */
+.topic-title::after {
+  content: ''; /* Pseudoelemento vazio para criar a linha */
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 10px auto 0;
+}
+
+
+/* Container Geral do Card */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Estilo do Card */
+.card {
+  width: 350px;
+  background-color: var(--color-theme-1);
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o card */
+  padding: 20px; /* Espaçamento interno */
+  color: var(--text-color-subtitulos);
+  font-family: 'Poppins', sans-serif; /* Fonte estilosa */
+  transition: transform 0.3s ease-in-out; /* Animação ao passar o mouse */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+/* Estilo do Título do Card */
+.card-title {
+  font-size: 1.5rem; /* Tamanho do título */
+  font-weight: bold; /* Negrito */
+  margin-bottom: 10px; /* Espaçamento inferior */
+  text-align: center; /* Centralizado */
+}
+
+/* Estilo da Descrição */
+.card-description {
+  font-size: 1rem; /* Tamanho da fonte */
+  line-height: 1.6; /* Altura da linha */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  text-align: initial; /* Centralizado */
+}
+
+/* Estilo dos Botões */
+.card-button {
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove a borda padrão */
+  border-radius: 10px; /* Bordas arredondadas */
+  font-size: 1rem; /* Tamanho do texto */
+  font-weight: bold; /* Texto em negrito */
+  cursor: pointer; /* Cursor pointer para indicar clique */
+  transition: background-color 0.3s ease-in-out; /* Animação de cor */
+}
+
+
+/* Estilo para o contêiner com scroll */
+.scrollable-container {
+  max-height: 400px; /* Define a altura máxima do contêiner */
+  overflow-y: auto; /* Ativa o scroll vertical */
+  padding: 10px; /* Espaçamento interno */
+  background-color: var(--color-theme-2);
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  margin: 20px; /* Espaçamento externo */
+  scrollbar-width: thin; /* Barra de rolagem fina para navegadores compatíveis */
+  scrollbar-color:#939393 #3d3d3d; /* Cores personalizadas */
+}
+
+/* Estilo para a barra de rolagem em navegadores Webkit (Chrome, Edge, Safari) */
+.scrollable-container::-webkit-scrollbar {
+  width: 8px; /* Largura da barra */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: #ffcb05; /* Cor da barra */
+  border-radius: 4px; /* Bordas arredondadas */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background-color: #2c2c3e; /* Fundo do track */
+}
+
+
+
